@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeNova</title>
+  <!-- Favicon / Tab Logo ka Code -->
+  <link rel="icon" type="image/png" href="/assets/images/footer_logo.png">
+  <meta name="description" content="About Hafiz Muhammad Mubeen Mughal — Hafiz-e-Quran, 22, Full Stack Developer trained at Aptech Computer Education Johar Town." />
+
+  <!-- Fonts + Bootstrap + Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Loader Start -->
+  <div id="loader">
+    <div class="loader-inner">
+      <img src="/assets/images/logo.png" alt="Code Nova" class="loader-mark">
+      <div class="loader-pct">0%</div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <div class="loader-text">Loading</div>
+    </div>
+  </div>
+  <!-- Loader End -->
+
+  <!-- Background Layers -->
+  <canvas id="particles"></canvas>
+  <div class="bg-orb o1"></div>
+  <div class="bg-orb o2"></div>
+  <div class="bg-orb o3"></div>
+
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <div class="container container-lg d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand">
+        <img src="/assets/images/logo.png" alt="Code Nova" class="brand-logo">
+        <span class="brand-text">Code Nova<small>Full Stack Developer</small></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="https://drive.google.com/file/d/1lmU6raPFZbDiqlmi2zr1Y37DjB6BNgfU/view?usp=drive_link" target="_blank" rel="noopener" class="btn-outline"><i class="bi bi-download"></i> CV</a>
+        <a href="https://github.com/softwareengineeringdesigner-ui" target="_blank" rel="noopener" class="btn-primary"><i class="bi bi-github"></i> GitHub</a>
+        <button class="hamburger" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- About Header Start -->
+  <section class="hero">
+    <div class="container container-lg">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 reveal">
+          <span class="eyebrow">About Me</span>
+          <h1 class="mt-3">A <span class="text-grad">Hafiz-e-Quran</span> and Full Stack engineer with a taste for premium craft.</h1>
+          <p class="lede">I'm Hafiz Muhammad Mubeen Mughal, 22 years old, and I've spent the last two years shipping web products end-to-end. My work spans ASP.NET Core APIs, React interfaces, PHP/MySQL platforms and WordPress builds — with a strong bias toward clean architecture, performance and beautiful UI.</p>
+          <div class="d-flex gap-2 mt-3 flex-wrap">
+            <span class="badge-soft">Hafiz-e-Quran</span>
+            <span class="badge-soft">22 Years</span>
+            <span class="badge-soft">Intermediate(ICS)</span>
+            <span class="badge-soft">Aptech — Johar Town</span>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal delay-2">
+          <div class="glass-card">
+            <h4 class="mb-3">Personal Information</h4>
+            <div class="d-flex justify-content-between py-2 border-bottom border-secondary-subtle"><span class="text-secondary">Name</span><strong>Hafiz M. Mubeen Mughal</strong></div>
+            <div class="d-flex justify-content-between py-2 border-bottom border-secondary-subtle"><span class="text-secondary">Age</span><strong>22 Years</strong></div>
+            <div class="d-flex justify-content-between py-2 border-bottom border-secondary-subtle"><span class="text-secondary">Education</span><strong>Intermediate</strong></div>
+            <div class="d-flex justify-content-between py-2 border-bottom border-secondary-subtle"><span class="text-secondary">Institute</span><strong>Aptech, Johar Town</strong></div>
+            <div class="d-flex justify-content-between py-2 border-bottom border-secondary-subtle"><span class="text-secondary">Experience</span><strong>2+ Years</strong></div>
+            <div class="d-flex justify-content-between py-2"><span class="text-secondary">Location</span><strong>Lahore, Pakistan</strong></div>
+            <a href="https://drive.google.com/file/d/1lmU6raPFZbDiqlmi2zr1Y37DjB6BNgfU/view?usp=drive_link" target="_blank" rel="noopener" class="btn-primary w-100 mt-3 justify-content-center"><i class="bi bi-download"></i> Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Header End -->
+
+  <!-- Mission & Vision Start -->
+  <section class="pt-0">
+    <div class="container container-lg">
+      <div class="row g-4">
+        <div class="col-md-4 reveal">
+          <div class="glass-card h-100">
+            <div class="icon"><i class="bi bi-bullseye"></i></div>
+            <h4>Mission</h4>
+            <p>To engineer premium, dependable web products that create measurable value for businesses and delightful moments for their users.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal delay-1">
+          <div class="glass-card h-100">
+            <div class="icon"><i class="bi bi-eye"></i></div>
+            <h4>Vision</h4>
+            <p>To become a globally recognized Full Stack engineer known for craft, integrity and quiet excellence in every line of code.</p>
+          </div>
+        </div>
+        <div class="col-md-4 reveal delay-2">
+          <div class="glass-card h-100">
+            <div class="icon"><i class="bi bi-compass"></i></div>
+            <h4>Career Goal</h4>
+            <p>Lead product engineering for ambitious teams, ship high-impact software, and mentor the next generation of Pakistani developers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Mission & Vision End -->
+
+  <!-- Timeline (Experience + Education) Start -->
+  <section>
+    <div class="container container-lg">
+      <div class="section-head reveal">
+        <span class="eyebrow">Journey</span>
+        <h2 class="mt-3">Experience & <span class="text-grad">Education</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6 reveal">
+          <div class="glass-card">
+            <h4 class="mb-4"><i class="bi bi-briefcase"></i> Experience</h4>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="dot"></div>
+                <div class="when">2024 — Present</div>
+                <h4>Full Stack Developer</h4>
+                <p>Delivering ASP.NET Core + React platforms, APIs and databases for professional clients.</p>
+              </div>
+              <div class="tl-item">
+                <div class="dot"></div>
+                <div class="when">2023 — 2024</div>
+                <h4>Backend Developer</h4>
+                <p>PHP/MySQL platforms and ASP.NET Web APIs with secure auth and scalable data models.</p>
+              </div>
+              <div class="tl-item">
+                <div class="dot"></div>
+                <div class="when">2022 — 2023</div>
+                <h4>Frontend Developer</h4>
+                <p>Responsive HTML5/CSS3/Bootstrap websites and WordPress themes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal delay-1">
+          <div class="glass-card">
+            <h4 class="mb-4"><i class="bi bi-mortarboard"></i> Education</h4>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="dot"></div>
+                <div class="when">Ongoing</div>
+                <h4>Hafiz-e-Quran</h4>
+                <p>Complete memorization of the Holy Quran — discipline that shapes every line of code I write.</p>
+              </div>
+              <div class="tl-item">
+                <div class="dot"></div>
+                <div class="when">Completed</div>
+                <h4>Intermediate</h4>
+                <p>Academic foundation in computer science fundamentals.</p>
+              </div>
+              <div class="tl-item">
+                <div class="dot"></div>
+                <div class="when">Aptech Computer Education</div>
+                <h4>Professional Software Development</h4>
+                <p>Intensive Full Stack curriculum at Aptech — Johar Town, Lahore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Timeline End -->
+
+  <!-- Certificates Section Start -->
+  <section class="pt-0">
+    <div class="container container-lg">
+      <div class="section-head reveal">
+        <span class="eyebrow">Achievements</span>
+        <h2 class="mt-3">Certificates</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="glass-card cert">
+            <div class="thumb"><i class="bi bi-patch-check-fill"></i></div>
+            <div class="body">
+              <h4>Full Stack Development</h4>
+              <p>Aptech Computer Education — Johar Town</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-1">
+          <div class="glass-card cert">
+            <div class="thumb"><i class="bi bi-award"></i></div>
+            <div class="body">
+              <h4>ASP.NET Core Specialist</h4>
+              <p>Framework & Web API Certification</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 reveal delay-2">
+          <div class="glass-card cert">
+            <div class="thumb"><i class="bi bi-book-half"></i></div>
+            <div class="body">
+              <h4>Hafiz-e-Quran</h4>
+              <p>Complete Quran Memorization Certificate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Certificates Section End -->
+
+  <!-- Footer Start -->
+  <footer class="footer-3d">
+    <div class="container container-lg footer-perspective">
+      <div class="footer-card">
+        <div class="footer-glow"></div>
+        <div class="row g-4 position-relative z-1">
+          <div class="col-md-4">
+            <a href="index.html" class="brand footer-brand">
+              <img src="/assets/images/footer_logo.png" alt="Code Nova" class="footer-logo">
+              <span class="brand-text">Code Nova<small>Full Stack Developer</small></span>
+            </a>
+            <p class="mt-3 footer-desc">Premium web experiences engineered with ASP.NET Core, React, PHP and WordPress.</p>
+          </div>
+          <div class="col-6 col-md-2 footer-links">
+            <h5>Quick Links</h5>
+            <a href="index.html"><span>Home</span></a>
+            <a href="about.html"><span>About</span></a>
+            <a href="services.html"><span>Services</span></a>
+          </div>
+          <div class="col-6 col-md-3 footer-links">
+            <h5>Skills</h5>
+            <a><span>ASP.NET Core</span></a>
+            <a><span>React.js</span></a>
+            <a><span>PHP · MySQL</span></a>
+            <a><span>WordPress</span></a>
+          </div>
+          <div class="col-md-3 footer-links footer-contact">
+            <h5>Contact</h5>
+<a href="mailto:softwareengineeringdesigner@gmail.com"><i class="bi bi-envelope"></i> <span>codenova@gmail.com</span></a>
+            <a href="https://github.com/softwareengineeringdesigner-ui" target="_blank"><i class="bi bi-github"></i> <span>GitHub</span></a>
+            <a href="https://wa.me/923287004634" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> <span>+92 328 7004634</span></a>
+            <a><i class="bi bi-geo-alt"></i> <span>Lahore, Pakistan</span></a>
+          </div>
+        </div>
+        <div class="copyright position-relative z-1">
+          <div class="copyright-inner">
+            © <span id="yr"></span> Hafiz Muhammad Mubeen Mughal. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <button class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Target WhatsApp Floating Button -->
+  <a href="javascript:void(0)" class="wa-float-btn" id="waToggleBtn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- WhatsApp Popup Box -->
+  <div class="wa-chat-box" id="waChatBox">
+
+    <!-- Header -->
+    <div class="wa-header">
+      <div class="wa-profile">
+        <div class="wa-avatar-container">
+          <img src="/assets/images/logo.png" alt="Profile" class="wa-avatar">
+          <span class="wa-online-dot"></span>
+        </div>
+        <div class="wa-user-info">
+          <h6>Code Nova</h6>
+          <span>online</span>
+        </div>
+      </div>
+      <button class="wa-close-btn" id="waCloseBtn">&times;</button>
+    </div>
+
+    <!-- Message Body -->
+    <div class="wa-body">
+      <div class="wa-msg-bubble">
+        <span class="wa-msg-author">Code Nova</span>
+        Hello! How can we assist you in making your dream designs?
+        <div class="wa-msg-time">
+          <span id="waCurrentTime">17:03</span>
+          <i class="fas fa-check-double"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer / Send Button -->
+    <div class="wa-footer">
+      <input type="text" class="wa-input" id="waUserInput" placeholder="Type Something..." onkeydown="handleKeyPress(event)">
+      <button class="wa-send-btn" onclick="sendToWhatsApp()">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
+
