@@ -1,44 +1,4 @@
 // =========================================
-// Loader — Animated Progress Bar + Percentage Counter
-// =========================================
-window.addEventListener('load', () => {
-  const loader = document.getElementById('loader');
-  if (!loader) return;
-
-  const pctEl = loader.querySelector('.loader-pct');
-  const fillEl = loader.querySelector('.loader-bar-fill');
-  if (!pctEl || !fillEl) {
-    // fallback: simply hide after 2s
-    setTimeout(() => loader.classList.add('hide'), 2000);
-    return;
-  }
-
-  const duration = 2200; // ms for 0→100
-  const fps = 60;
-  const totalFrames = Math.round((duration / 1000) * fps);
-  const increment = 100 / totalFrames;
-  let current = 0;
-  let frame = 0;
-
-  function animate() {
-    frame++;
-    current = Math.min(current + increment, 100);
-    pctEl.textContent = Math.round(current) + '%';
-    fillEl.style.width = current + '%';
-
-    if (current < 100) {
-      requestAnimationFrame(animate);
-    } else {
-      // Hold at 100% briefly, then hide
-      setTimeout(() => loader.classList.add('hide'), 400);
-    }
-  }
-
-  // Start animation after a tiny delay for layout settle
-  setTimeout(() => requestAnimationFrame(animate), 120);
-});
-
-// =========================================
 // Navbar — scroll state + mobile menu + active link
 // =========================================
 const nav = document.querySelector('.navbar');
